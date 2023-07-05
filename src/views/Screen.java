@@ -33,43 +33,48 @@ public class Screen extends javax.swing.JFrame {
         txt_weighing_01 = new javax.swing.JTextField();
         lbl_percentage_icon_01 = new javax.swing.JLabel();
         txt_qualification_title = new javax.swing.JLabel();
-        txt_qualification_01 = new javax.swing.JTextField();
-        txt_qualification_02 = new javax.swing.JTextField();
+        txt_factor_1 = new javax.swing.JTextField();
+        txt_factor_2 = new javax.swing.JTextField();
         chbx_qualification_02 = new javax.swing.JCheckBox();
         txt_weighing_02 = new javax.swing.JTextField();
         lbl_percentage_icon_02 = new javax.swing.JLabel();
-        txt_qualification_03 = new javax.swing.JTextField();
+        txt_factor_3 = new javax.swing.JTextField();
         chbx_qualification_03 = new javax.swing.JCheckBox();
         txt_weighing_03 = new javax.swing.JTextField();
         lbl_percentage_icon_03 = new javax.swing.JLabel();
-        txt_qualification_04 = new javax.swing.JTextField();
+        txt_factor_4 = new javax.swing.JTextField();
         chbx_qualification_04 = new javax.swing.JCheckBox();
         txt_weighing_04 = new javax.swing.JTextField();
         lbl_percentage_icon_04 = new javax.swing.JLabel();
         txt_weighing_06 = new javax.swing.JTextField();
         lbl_percentage_icon_06 = new javax.swing.JLabel();
-        txt_qualification_05 = new javax.swing.JTextField();
+        txt_factor_5 = new javax.swing.JTextField();
         chbx_qualification_05 = new javax.swing.JCheckBox();
         txt_weighing_05 = new javax.swing.JTextField();
         lbl_percentage_icon_05 = new javax.swing.JLabel();
-        txt_qualification_06 = new javax.swing.JTextField();
+        txt_factor_6 = new javax.swing.JTextField();
         chbx_qualification_06 = new javax.swing.JCheckBox();
         jLabel10 = new javax.swing.JLabel();
         btn_calculate = new javax.swing.JButton();
         txt_qualification_final = new javax.swing.JTextField();
         lbl_qualification_final1 = new javax.swing.JLabel();
         lbl_weighing_total = new javax.swing.JLabel();
-        txt_qualification_2 = new javax.swing.JTextField();
+        txt_qualification_1 = new javax.swing.JTextField();
         txt_qualification_3 = new javax.swing.JTextField();
+        txt_qualification_2 = new javax.swing.JTextField();
         txt_qualification_4 = new javax.swing.JTextField();
-        txt_qualification_5 = new javax.swing.JTextField();
         txt_qualification_6 = new javax.swing.JTextField();
-        txt_qualification_7 = new javax.swing.JTextField();
+        txt_qualification_5 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CalculApp");
 
         chbx_qualification_01.setText("Nota 1");
+        chbx_qualification_01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chbx_qualification_01ActionPerformed(evt);
+            }
+        });
 
         lbl_weighing_title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_weighing_title.setText("Ponderación");
@@ -87,13 +92,13 @@ public class Screen extends javax.swing.JFrame {
         txt_qualification_title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txt_qualification_title.setText("Nota");
 
-        txt_qualification_01.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_qualification_01.setText("0");
-        txt_qualification_01.setEnabled(false);
+        txt_factor_1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_factor_1.setText("0");
+        txt_factor_1.setEnabled(false);
 
-        txt_qualification_02.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_qualification_02.setText("0");
-        txt_qualification_02.setEnabled(false);
+        txt_factor_2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_factor_2.setText("0");
+        txt_factor_2.setEnabled(false);
 
         chbx_qualification_02.setText("Nota 2");
 
@@ -103,9 +108,9 @@ public class Screen extends javax.swing.JFrame {
 
         lbl_percentage_icon_02.setText("%");
 
-        txt_qualification_03.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_qualification_03.setText("0");
-        txt_qualification_03.setEnabled(false);
+        txt_factor_3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_factor_3.setText("0");
+        txt_factor_3.setEnabled(false);
 
         chbx_qualification_03.setText("Nota 3");
 
@@ -115,9 +120,9 @@ public class Screen extends javax.swing.JFrame {
 
         lbl_percentage_icon_03.setText("%");
 
-        txt_qualification_04.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_qualification_04.setText("0");
-        txt_qualification_04.setEnabled(false);
+        txt_factor_4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_factor_4.setText("0");
+        txt_factor_4.setEnabled(false);
 
         chbx_qualification_04.setText("Nota 4");
 
@@ -133,9 +138,9 @@ public class Screen extends javax.swing.JFrame {
 
         lbl_percentage_icon_06.setText("%");
 
-        txt_qualification_05.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_qualification_05.setText("0");
-        txt_qualification_05.setEnabled(false);
+        txt_factor_5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_factor_5.setText("0");
+        txt_factor_5.setEnabled(false);
 
         chbx_qualification_05.setText("Nota 5");
 
@@ -145,9 +150,9 @@ public class Screen extends javax.swing.JFrame {
 
         lbl_percentage_icon_05.setText("%");
 
-        txt_qualification_06.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_qualification_06.setText("0");
-        txt_qualification_06.setEnabled(false);
+        txt_factor_6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_factor_6.setText("0");
+        txt_factor_6.setEnabled(false);
 
         chbx_qualification_06.setText("Nota 6");
 
@@ -164,29 +169,29 @@ public class Screen extends javax.swing.JFrame {
 
         lbl_weighing_total.setText("Ponderación Total");
 
-        txt_qualification_2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_qualification_2.setText("0");
-        txt_qualification_2.setEnabled(false);
+        txt_qualification_1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_qualification_1.setText("0");
+        txt_qualification_1.setEnabled(false);
 
         txt_qualification_3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_3.setText("0");
         txt_qualification_3.setEnabled(false);
 
+        txt_qualification_2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_qualification_2.setText("0");
+        txt_qualification_2.setEnabled(false);
+
         txt_qualification_4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_4.setText("0");
         txt_qualification_4.setEnabled(false);
-
-        txt_qualification_5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_qualification_5.setText("0");
-        txt_qualification_5.setEnabled(false);
 
         txt_qualification_6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_6.setText("0");
         txt_qualification_6.setEnabled(false);
 
-        txt_qualification_7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_qualification_7.setText("0");
-        txt_qualification_7.setEnabled(false);
+        txt_qualification_5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_qualification_5.setText("0");
+        txt_qualification_5.setEnabled(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -211,15 +216,15 @@ public class Screen extends javax.swing.JFrame {
                                             .addComponent(chbx_qualification_03, javax.swing.GroupLayout.Alignment.TRAILING))
                                         .addGap(18, 18, 18)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txt_qualification_1)
                                             .addComponent(txt_qualification_2)
-                                            .addComponent(txt_qualification_4)
                                             .addComponent(txt_qualification_3)
-                                            .addComponent(txt_qualification_5)
+                                            .addComponent(txt_qualification_4)
                                             .addComponent(txt_qualification_6)))
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                         .addComponent(chbx_qualification_05)
                                         .addGap(18, 18, 18)
-                                        .addComponent(txt_qualification_7))
+                                        .addComponent(txt_qualification_5))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(0, 0, Short.MAX_VALUE)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -255,12 +260,12 @@ public class Screen extends javax.swing.JFrame {
                                                         .addComponent(lbl_percentage_icon_05, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                    .addComponent(txt_qualification_05, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                                    .addComponent(txt_qualification_04, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                                    .addComponent(txt_qualification_03, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                                    .addComponent(txt_qualification_02, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                                    .addComponent(txt_qualification_01, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(txt_qualification_06, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                                                    .addComponent(txt_factor_5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                                                    .addComponent(txt_factor_4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                                                    .addComponent(txt_factor_3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                                                    .addComponent(txt_factor_2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                                                    .addComponent(txt_factor_1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(txt_factor_6, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(jLabel10)
@@ -281,46 +286,46 @@ public class Screen extends javax.swing.JFrame {
                     .addComponent(lbl_weighing_title))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txt_qualification_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_qualification_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt_weighing_01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl_percentage_icon_01)
                     .addComponent(chbx_qualification_01)
-                    .addComponent(txt_qualification_01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_factor_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txt_qualification_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_qualification_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(chbx_qualification_02)
                     .addComponent(txt_weighing_02, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl_percentage_icon_02)
-                    .addComponent(txt_qualification_02, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_factor_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txt_qualification_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt_weighing_03, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(chbx_qualification_03)
                     .addComponent(lbl_percentage_icon_03)
-                    .addComponent(txt_qualification_03, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_factor_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txt_qualification_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_qualification_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt_weighing_04, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(chbx_qualification_04)
                     .addComponent(lbl_percentage_icon_04)
-                    .addComponent(txt_qualification_04, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_factor_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(chbx_qualification_05)
-                    .addComponent(txt_qualification_7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_qualification_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt_weighing_05, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl_percentage_icon_05)
-                    .addComponent(txt_qualification_05, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_factor_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(chbx_qualification_06)
                     .addComponent(txt_qualification_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt_weighing_06, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl_percentage_icon_06)
-                    .addComponent(txt_qualification_06, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_factor_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl_weighing_total)
@@ -339,6 +344,23 @@ public class Screen extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void chbx_qualification_01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chbx_qualification_01ActionPerformed
+        // TODO add your handling code here:
+        if(chbx_qualification_01.isSelected()){
+            this.updateRow(1, true);
+        } else {
+            this.updateRow(1, false);
+        }
+    }//GEN-LAST:event_chbx_qualification_01ActionPerformed
+
+    private void updateRow(int rowNumber, boolean enabled) {
+        switch(rowNumber){
+            case 1: 
+                this.txt_factor_1.setEnabled(enabled);
+                break;
+                
+        }
+    }
     /**
      * @param args the command line arguments
      */
@@ -392,18 +414,18 @@ public class Screen extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_qualification_final1;
     private javax.swing.JLabel lbl_weighing_title;
     private javax.swing.JLabel lbl_weighing_total;
-    private javax.swing.JTextField txt_qualification_01;
-    private javax.swing.JTextField txt_qualification_02;
-    private javax.swing.JTextField txt_qualification_03;
-    private javax.swing.JTextField txt_qualification_04;
-    private javax.swing.JTextField txt_qualification_05;
-    private javax.swing.JTextField txt_qualification_06;
+    private javax.swing.JTextField txt_factor_1;
+    private javax.swing.JTextField txt_factor_2;
+    private javax.swing.JTextField txt_factor_3;
+    private javax.swing.JTextField txt_factor_4;
+    private javax.swing.JTextField txt_factor_5;
+    private javax.swing.JTextField txt_factor_6;
+    private javax.swing.JTextField txt_qualification_1;
     private javax.swing.JTextField txt_qualification_2;
     private javax.swing.JTextField txt_qualification_3;
     private javax.swing.JTextField txt_qualification_4;
     private javax.swing.JTextField txt_qualification_5;
     private javax.swing.JTextField txt_qualification_6;
-    private javax.swing.JTextField txt_qualification_7;
     private javax.swing.JTextField txt_qualification_final;
     private javax.swing.JLabel txt_qualification_title;
     private javax.swing.JTextField txt_weighing_01;

@@ -1,1 +1,5 @@
-/dist/
+src/controllers/Logic.java
+src/views/RealScreen.java
+src/views/RealScreen.form
+dist/
+build/
