@@ -28,11 +28,11 @@ public class Screen extends javax.swing.JFrame {
     private void initComponents() {
 
         chbx_qualification_01 = new javax.swing.JCheckBox();
-        jLabel1 = new javax.swing.JLabel();
+        lbl_weighing_title = new javax.swing.JLabel();
         txt_weighing_total = new javax.swing.JTextField();
         txt_weighing_01 = new javax.swing.JTextField();
         lbl_percentage_icon_01 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        txt_qualification_title = new javax.swing.JLabel();
         txt_qualification_01 = new javax.swing.JTextField();
         txt_qualification_02 = new javax.swing.JTextField();
         chbx_qualification_02 = new javax.swing.JCheckBox();
@@ -58,13 +58,21 @@ public class Screen extends javax.swing.JFrame {
         btn_calculate = new javax.swing.JButton();
         txt_qualification_final = new javax.swing.JTextField();
         lbl_qualification_final1 = new javax.swing.JLabel();
+        lbl_weighing_total = new javax.swing.JLabel();
+        txt_qualification_2 = new javax.swing.JTextField();
+        txt_qualification_3 = new javax.swing.JTextField();
+        txt_qualification_4 = new javax.swing.JTextField();
+        txt_qualification_5 = new javax.swing.JTextField();
+        txt_qualification_6 = new javax.swing.JTextField();
+        txt_qualification_7 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CalculApp");
 
         chbx_qualification_01.setText("Nota 1");
 
-        jLabel1.setText("Ponderación");
+        lbl_weighing_title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_weighing_title.setText("Ponderación");
 
         txt_weighing_total.setEditable(false);
         txt_weighing_total.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -76,7 +84,8 @@ public class Screen extends javax.swing.JFrame {
 
         lbl_percentage_icon_01.setText("%");
 
-        jLabel3.setText("Nota");
+        txt_qualification_title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txt_qualification_title.setText("Nota");
 
         txt_qualification_01.setEditable(false);
         txt_qualification_01.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -148,10 +157,36 @@ public class Screen extends javax.swing.JFrame {
 
         txt_qualification_final.setEditable(false);
         txt_qualification_final.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txt_qualification_final.setText("0");
+        txt_qualification_final.setText("1.0");
 
-        lbl_qualification_final1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        lbl_qualification_final1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lbl_qualification_final1.setText("Tu nota final de la asignatura es: ");
+
+        lbl_weighing_total.setText("Ponderación Total");
+
+        txt_qualification_2.setEditable(false);
+        txt_qualification_2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_qualification_2.setText("0");
+
+        txt_qualification_3.setEditable(false);
+        txt_qualification_3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_qualification_3.setText("0");
+
+        txt_qualification_4.setEditable(false);
+        txt_qualification_4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_qualification_4.setText("0");
+
+        txt_qualification_5.setEditable(false);
+        txt_qualification_5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_qualification_5.setText("0");
+
+        txt_qualification_6.setEditable(false);
+        txt_qualification_6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_qualification_6.setText("0");
+
+        txt_qualification_7.setEditable(false);
+        txt_qualification_7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_qualification_7.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -160,144 +195,144 @@ public class Screen extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btn_calculate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(chbx_qualification_02)
-                        .addGap(22, 22, 22)
-                        .addComponent(txt_weighing_02, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_percentage_icon_02)
-                        .addGap(18, 18, 18)
-                        .addComponent(txt_qualification_02, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(chbx_qualification_01)
-                        .addGap(22, 22, 22)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(txt_weighing_01, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lbl_percentage_icon_01)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lbl_qualification_final1)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(chbx_qualification_01)
+                                            .addComponent(chbx_qualification_02)
+                                            .addComponent(chbx_qualification_04)
+                                            .addComponent(chbx_qualification_06)
+                                            .addComponent(chbx_qualification_03, javax.swing.GroupLayout.Alignment.TRAILING))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txt_qualification_2)
+                                            .addComponent(txt_qualification_4)
+                                            .addComponent(txt_qualification_3)
+                                            .addComponent(txt_qualification_5)
+                                            .addComponent(txt_qualification_6)))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(chbx_qualification_05)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(txt_qualification_7))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(0, 0, Short.MAX_VALUE)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(lbl_weighing_total, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txt_qualification_title, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGap(6, 6, 6)
-                                .addComponent(txt_qualification_01))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(chbx_qualification_03)
-                        .addGap(22, 22, 22)
-                        .addComponent(txt_weighing_03, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_percentage_icon_03)
-                        .addGap(18, 18, 18)
-                        .addComponent(txt_qualification_03))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(chbx_qualification_04)
-                        .addGap(22, 22, 22)
-                        .addComponent(txt_weighing_04, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_percentage_icon_04)
-                        .addGap(18, 18, 18)
-                        .addComponent(txt_qualification_04))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(chbx_qualification_05)
-                        .addGap(22, 22, 22)
-                        .addComponent(txt_weighing_05, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_percentage_icon_05)
-                        .addGap(18, 18, 18)
-                        .addComponent(txt_qualification_05))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lbl_weighing_title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(txt_weighing_05, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txt_weighing_01, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txt_weighing_02, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txt_weighing_03, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txt_weighing_04, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txt_weighing_06, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txt_weighing_total, javax.swing.GroupLayout.Alignment.LEADING))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                            .addComponent(lbl_percentage_icon_01, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                            .addComponent(lbl_percentage_icon_02, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                            .addComponent(lbl_percentage_icon_03, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                            .addComponent(lbl_percentage_icon_04, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addComponent(lbl_percentage_icon_06, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addGap(6, 6, 6))
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addComponent(lbl_percentage_icon_05, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                    .addComponent(txt_qualification_05, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                                                    .addComponent(txt_qualification_04, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                                                    .addComponent(txt_qualification_03, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                                                    .addComponent(txt_qualification_02, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                                                    .addComponent(txt_qualification_01, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(txt_qualification_06, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel10)
+                                                .addGap(0, 0, Short.MAX_VALUE)))))))
+                        .addGap(18, 18, 18))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(chbx_qualification_06)
-                        .addGap(22, 22, 22)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txt_weighing_total, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                            .addComponent(txt_weighing_06, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel10)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lbl_percentage_icon_06)
-                                .addGap(18, 18, 18)
-                                .addComponent(txt_qualification_06))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(lbl_qualification_final1)
-                        .addGap(18, 18, 18)
-                        .addComponent(txt_qualification_final)))
-                .addContainerGap())
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btn_calculate, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_qualification_final, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txt_qualification_01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(chbx_qualification_01)
-                            .addComponent(txt_weighing_01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbl_percentage_icon_01))))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(txt_qualification_02, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(chbx_qualification_02)
-                        .addComponent(txt_weighing_02, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lbl_percentage_icon_02)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(txt_qualification_03, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(chbx_qualification_03)
-                        .addComponent(txt_weighing_03, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lbl_percentage_icon_03)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(txt_qualification_04, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(chbx_qualification_04)
-                        .addComponent(txt_weighing_04, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lbl_percentage_icon_04)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(txt_qualification_05, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(chbx_qualification_05)
-                        .addComponent(txt_weighing_05, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lbl_percentage_icon_05)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(txt_qualification_06, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(chbx_qualification_06)
-                        .addComponent(txt_weighing_06, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lbl_percentage_icon_06)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txt_qualification_title)
+                    .addComponent(lbl_weighing_title))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txt_qualification_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_weighing_01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_percentage_icon_01)
+                    .addComponent(chbx_qualification_01)
+                    .addComponent(txt_qualification_01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txt_qualification_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(chbx_qualification_02)
+                    .addComponent(txt_weighing_02, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_percentage_icon_02)
+                    .addComponent(txt_qualification_02, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txt_qualification_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_weighing_03, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(chbx_qualification_03)
+                    .addComponent(lbl_percentage_icon_03)
+                    .addComponent(txt_qualification_03, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txt_qualification_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_weighing_04, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(chbx_qualification_04)
+                    .addComponent(lbl_percentage_icon_04)
+                    .addComponent(txt_qualification_04, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(chbx_qualification_05)
+                    .addComponent(txt_qualification_7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_weighing_05, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_percentage_icon_05)
+                    .addComponent(txt_qualification_05, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(chbx_qualification_06)
+                    .addComponent(txt_qualification_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_weighing_06, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_percentage_icon_06)
+                    .addComponent(txt_qualification_06, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_weighing_total)
                     .addComponent(txt_weighing_total, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btn_calculate)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txt_qualification_final, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl_qualification_final1))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         pack();
@@ -347,9 +382,7 @@ public class Screen extends javax.swing.JFrame {
     private javax.swing.JCheckBox chbx_qualification_04;
     private javax.swing.JCheckBox chbx_qualification_05;
     private javax.swing.JCheckBox chbx_qualification_06;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel lbl_percentage_icon_01;
     private javax.swing.JLabel lbl_percentage_icon_02;
     private javax.swing.JLabel lbl_percentage_icon_03;
@@ -357,13 +390,22 @@ public class Screen extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_percentage_icon_05;
     private javax.swing.JLabel lbl_percentage_icon_06;
     private javax.swing.JLabel lbl_qualification_final1;
+    private javax.swing.JLabel lbl_weighing_title;
+    private javax.swing.JLabel lbl_weighing_total;
     private javax.swing.JTextField txt_qualification_01;
     private javax.swing.JTextField txt_qualification_02;
     private javax.swing.JTextField txt_qualification_03;
     private javax.swing.JTextField txt_qualification_04;
     private javax.swing.JTextField txt_qualification_05;
     private javax.swing.JTextField txt_qualification_06;
+    private javax.swing.JTextField txt_qualification_2;
+    private javax.swing.JTextField txt_qualification_3;
+    private javax.swing.JTextField txt_qualification_4;
+    private javax.swing.JTextField txt_qualification_5;
+    private javax.swing.JTextField txt_qualification_6;
+    private javax.swing.JTextField txt_qualification_7;
     private javax.swing.JTextField txt_qualification_final;
+    private javax.swing.JLabel txt_qualification_title;
     private javax.swing.JTextField txt_weighing_01;
     private javax.swing.JTextField txt_weighing_02;
     private javax.swing.JTextField txt_weighing_03;
