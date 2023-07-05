@@ -74,80 +74,80 @@ public class Screen extends javax.swing.JFrame {
         lbl_weighing_title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_weighing_title.setText("Ponderación");
 
-        txt_weighing_total.setEditable(false);
         txt_weighing_total.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_weighing_total.setText("0");
+        txt_weighing_total.setEnabled(false);
 
-        txt_weighing_01.setEditable(false);
         txt_weighing_01.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_weighing_01.setText("0");
+        txt_weighing_01.setEnabled(false);
 
         lbl_percentage_icon_01.setText("%");
 
         txt_qualification_title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txt_qualification_title.setText("Nota");
 
-        txt_qualification_01.setEditable(false);
         txt_qualification_01.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_01.setText("0");
+        txt_qualification_01.setEnabled(false);
 
-        txt_qualification_02.setEditable(false);
         txt_qualification_02.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_02.setText("0");
+        txt_qualification_02.setEnabled(false);
 
         chbx_qualification_02.setText("Nota 2");
 
-        txt_weighing_02.setEditable(false);
         txt_weighing_02.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_weighing_02.setText("0");
+        txt_weighing_02.setEnabled(false);
 
         lbl_percentage_icon_02.setText("%");
 
-        txt_qualification_03.setEditable(false);
         txt_qualification_03.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_03.setText("0");
+        txt_qualification_03.setEnabled(false);
 
         chbx_qualification_03.setText("Nota 3");
 
-        txt_weighing_03.setEditable(false);
         txt_weighing_03.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_weighing_03.setText("0");
+        txt_weighing_03.setEnabled(false);
 
         lbl_percentage_icon_03.setText("%");
 
-        txt_qualification_04.setEditable(false);
         txt_qualification_04.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_04.setText("0");
+        txt_qualification_04.setEnabled(false);
 
         chbx_qualification_04.setText("Nota 4");
 
-        txt_weighing_04.setEditable(false);
         txt_weighing_04.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_weighing_04.setText("0");
+        txt_weighing_04.setEnabled(false);
 
         lbl_percentage_icon_04.setText("%");
 
-        txt_weighing_06.setEditable(false);
         txt_weighing_06.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_weighing_06.setText("0");
+        txt_weighing_06.setEnabled(false);
 
         lbl_percentage_icon_06.setText("%");
 
-        txt_qualification_05.setEditable(false);
         txt_qualification_05.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_05.setText("0");
+        txt_qualification_05.setEnabled(false);
 
         chbx_qualification_05.setText("Nota 5");
 
-        txt_weighing_05.setEditable(false);
         txt_weighing_05.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_weighing_05.setText("0");
+        txt_weighing_05.setEnabled(false);
 
         lbl_percentage_icon_05.setText("%");
 
-        txt_qualification_06.setEditable(false);
         txt_qualification_06.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_06.setText("0");
+        txt_qualification_06.setEnabled(false);
 
         chbx_qualification_06.setText("Nota 6");
 
@@ -164,29 +164,29 @@ public class Screen extends javax.swing.JFrame {
 
         lbl_weighing_total.setText("Ponderación Total");
 
-        txt_qualification_2.setEditable(false);
         txt_qualification_2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_2.setText("0");
+        txt_qualification_2.setEnabled(false);
 
-        txt_qualification_3.setEditable(false);
         txt_qualification_3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_3.setText("0");
+        txt_qualification_3.setEnabled(false);
 
-        txt_qualification_4.setEditable(false);
         txt_qualification_4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_4.setText("0");
+        txt_qualification_4.setEnabled(false);
 
-        txt_qualification_5.setEditable(false);
         txt_qualification_5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_5.setText("0");
+        txt_qualification_5.setEnabled(false);
 
-        txt_qualification_6.setEditable(false);
         txt_qualification_6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_6.setText("0");
+        txt_qualification_6.setEnabled(false);
 
-        txt_qualification_7.setEditable(false);
         txt_qualification_7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_qualification_7.setText("0");
+        txt_qualification_7.setEnabled(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
